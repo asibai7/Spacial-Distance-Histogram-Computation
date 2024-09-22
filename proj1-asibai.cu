@@ -306,5 +306,8 @@ int main(int argc, char **argv)
     free(histogram);
     free(GPUhistogramOnHost);
     free(differenceHistogram);
+    free(hostPositionX);
+    free(hostPositionY);
+    free(hostPositionZ);
     return 0;
 }
