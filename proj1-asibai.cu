@@ -198,6 +198,9 @@ void PDH_baselineGPU() // function to compute histogram using GPU
         printf("CUDA error after 4th cudaFree: %s\n", cudaGetErrorString(err));
         exit(EXIT_FAILURE);
     }
+    free(hostPositionX);
+    free(hostPositionY);
+    free(hostPositionZ);
 }
 
 // set a checkpoint and show the (natural) running time in seconds
@@ -306,8 +309,5 @@ int main(int argc, char **argv)
     free(histogram);
     free(GPUhistogramOnHost);
     free(differenceHistogram);
-    free(hostPositionX);
-    free(hostPositionY);
-    free(hostPositionZ);
     return 0;
 }
