@@ -281,19 +281,19 @@ int main(int argc, char **argv)
     gettimeofday(&startTime, &Idunno);
     // call Host(CPU) single thread version to compute the histogram
     PDH_baseline();
-    // print out the Host(CPU) histogram
-    output_histogram(histogram, "CPU");
     // check the total running time of Host(CPU) code
     report_running_time("CPU");
+    // print out the Host(CPU) histogram
+    output_histogram(histogram, "CPU");
 
     // start counting Device(GPU) time
     gettimeofday(&startTime, &Idunno);
     // Call Device(GPU) multithreaded version to compute the histogram
     PDH_baselineGPU();
-    // print out the Device(GPU) histogram
-    output_histogram(GPUhistogramOnHost, "GPU");
     // check the total running time of Device(GPU) code
     report_running_time("GPU");
+    // print out the Device(GPU) histogram
+    output_histogram(GPUhistogramOnHost, "GPU");
     // compute difference
     int isdifferent = computeDifference(histogram, GPUhistogramOnHost, differenceHistogram, num_buckets);
     if(isdifferent == 0) // if there are no differences
