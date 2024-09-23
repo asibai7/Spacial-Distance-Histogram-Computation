@@ -2,7 +2,7 @@
 
 This project implements a CUDA-accelerated computation of a histogram that categorizes distances between atoms in a 3D space. The program computes distances between each pair of atoms and increments the appropriate histogram bucket, leveraging parallel processing on the GPU to improve performance over the CPU-only version. It measures and compares the execution times of the CPU and GPU versions, highlighting the performance difference. Additionally, it checks for any discrepancies between the CPU and GPU-generated histograms.
 
-Requirements
+Requirements:
 To compile and run the program, you need access to a CUDA-enabled machine. Ensure you have nvcc installed to compile CUDA code.
 
 To install and use:
