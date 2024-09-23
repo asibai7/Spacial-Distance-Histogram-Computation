@@ -26,8 +26,8 @@ Example:
 With 200,000 atoms and a bucket range of 2,000:
 - **CPU time**: 540.8 seconds
 - **GPU time**: 19.3 seconds
-**<atomCount>**: The number of atoms to generate in 3D space.  
-**<bucketRange>**: The range for each bucket in the histogram.
+-**<atomCount>**: The number of atoms to generate in 3D space.  
+-**<bucketRange>**: The range for each bucket in the histogram.
 
 
 
