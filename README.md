@@ -13,7 +13,7 @@ cd Spacial-Distance-Histogram-Computation
 ```
 2. Compile the code using nvcc on a CUDA-enabled machine:
 ```
-nvcc SDH.c -o SDH
+nvcc SDH.cu -o SDH
 ```
 3. Run program:
 ```
