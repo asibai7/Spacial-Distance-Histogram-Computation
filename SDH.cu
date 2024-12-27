@@ -1,7 +1,7 @@
 /* ==================================================================
-    Programmer: Ahmad Sibai (asibai@usf.edu)
+    Programmer: Ahmad Sibai
     Project 1: Spacial Distance Histogram Computation (CUDA)
-    To compile: nvcc SDH.c -o SDH in the GAIVI machines
+    To compile: nvcc SDH.c -o SDH
    ==================================================================*/
 // For test where atoms = 200,000 and bucket range = 2000, CPU time: 540.8, GPU time: 19.3
 #include <stdio.h>
